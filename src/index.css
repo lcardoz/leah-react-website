@@ -45,3 +45,27 @@ code {
   padding: 10px 20px 10px 20px;
   margin-top: 20px;
 }
+
+/* unvisited link */
+a:link {
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: gainsboro;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: #3B95E3;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: underline;
+}
