@@ -47,25 +47,25 @@ code {
 }
 
 /* unvisited link */
-a:link {
+#listening-to:link {
   color: gainsboro;
   text-decoration: underline;
 }
 
 /* visited link */
-a:visited {
+#listening-to:visited {
   color: gainsboro;
   text-decoration: underline;
 }
 
 /* mouse over link */
-a:hover {
+#listening-to:hover {
   color: #3B95E3;
   text-decoration: underline;
 }
 
 /* selected link */
-a:active {
+#listening-to:active {
   color: blue;
   text-decoration: underline;
 }
