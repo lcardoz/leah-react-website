@@ -14,12 +14,28 @@ code {
 }
 
 #title {
-  padding: 10px;
+  margin-Top: 20px;
+  padding: 10px 10px 0px 10px;
   font-size: 30px;
   color: #fc3903;
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
+  background-color: white;
   font-family: Monaco, serif;
   text-align: center;
+  justify-content: flex-end;
+}
+
+#hamburger-icon {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#dropdown-items {
+  font-size: 15px;
+  color: #3B95E3;
+  font-weight: 900;
 }
 
 #small-header {
@@ -36,11 +52,12 @@ code {
 }
 
 #about-me {
-  color: gainsboro;
+  /* color: gainsboro; */
+  color: white;
   font-size: 15px;
   font-family: Monaco, serif;
   font-weight: 900;
-  padding: 10px 20px 10px 20px;
+  padding: 20px;
   margin-top: 20px;
 }
 
@@ -53,7 +70,7 @@ code {
 
 /* visited link */
 #listening-to:visited {
-  color: gainsboro;
+  color: white;
   text-decoration: underline;
 }
 
@@ -79,3 +96,4 @@ code {
   width: 50%;
   border-radius: 10px;
 }
+
