@@ -1,28 +1,23 @@
 import './App.css';
-import leahPic from './images/leahpic1.JPG';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Resumes from './components/Resumes';
+import Contact from './components/Contact';
+import NoPage from './components/NoPage';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <h1 id="title">
-        <span id="small-header">welcome to the personal site of  </span>
-        <strong>LEAH CARDOZ</strong>
-      </h1>
-      {/* ADD HAMBURGER IN TOP RIGHT CORNER OF TITLE */}
-      {/* links to pages: projects | resumes | contact */}
-      <div id="about-me-container">
-        <div id ="about-me">
-          <p style={{fontSize: "18px"}}>software engineer + concert enthusiast + student always</p>
-          <p >~CURRENTLY~</p>
-          <p>looking for: frontend or fullstack web development opportunities</p>
-          <p>listening to: <a id="listening-to" href="https://open.spotify.com/album/4FR8Z6TvIsC56NLyNomNRE?si=5zkRDp48T-OWHAAyrIAx9g">Stop Making Sense (Live)</a> by Talking Heads</p>
-          <p>living in: Brooklyn, NY</p>
-        </div>
-      </div>
-      <div id="leah-pic-container">
-        <img id="leah-pic" src={leahPic} alt="Leah in Antigua" />
-      </div>
-
+      <NavBar />
+      <Routes>
+        <Route path = '/projects' element={ <Projects />} />
+        <Route path = '/resumes' element={ <Resumes />} />
+        <Route path = '/contact' element={ <Contact />} />
+        <Route path = '*' element={ <NoPage />} />
+        <Route path = '/' element={ <Home />} />
+      </Routes>
     </>
   );
 }
