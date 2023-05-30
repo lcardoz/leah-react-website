@@ -4,7 +4,7 @@ import leahPic4 from '../images/leahpic4.JPG';
 const Contact = () => {
   return (
     <div>
-       <div id="leah-pic-container-contact">
+      <div id="leah-pic-container-contact">
         <img id="leah-pic" src={leahPic4} alt="Leah in Antigua" />
       </div>
       <div id="contact-link-icons">
@@ -21,7 +21,6 @@ const Contact = () => {
           <i class="large spotify icon"></i>
         </a>
       </div>
-     
     </div>
   )
 }
