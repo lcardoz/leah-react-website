@@ -7,8 +7,8 @@ const NavBar = () => {
   return (
     <>
       <h1 id="title">
-        <span id="small-header">welcome to the personal site of  </span>
         <strong>LEAH CARDOZ</strong>
+        <span id="small-header">  they/them</span>
         <Dropdown id="hamburger-icon" item icon='bars' style={{ fontSize: 24, paddingBottom: "25px"}} >
             <Dropdown.Menu direction="left">
               <Dropdown.Item id="dropdown-items" as={Link} to={'/'} icon='home' text='Home'/>

@@ -104,3 +104,34 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+/* CONTACT */
+#leah-pic-container-contact {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-link-icons {
+  text-align: center;
+  color: white;
+}
+
+/* unvisited link */
+#contact:link {
+  color: white;
+}
+
+/* visited link */
+#contact:visited {
+  color: white;
+}
+
+/* mouse over link */
+#contact:hover {
+  color: gainsboro;
+}
+
+/* selected link */
+#contact:active {
+  color: #fc3903;
+}
