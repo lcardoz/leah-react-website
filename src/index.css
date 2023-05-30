@@ -97,3 +97,10 @@ code {
   border-radius: 10px;
 }
 
+/* RESUMES */
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
