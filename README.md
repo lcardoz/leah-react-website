@@ -13,4 +13,6 @@ Please note this is a work in progress!
 - add shadows/borders to create depth/dimension?
 - make sure fonts (style, weight, size, color etc), colors, hover effects, link effects, spacing (margin, padding, width/height) are all uniform
 - buy domain and deploy site
+- update resumes/huntr etc with new website link
+- reupload new resumes to Resumes component
 -->
