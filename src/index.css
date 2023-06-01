@@ -13,12 +13,12 @@ code {
     monospace;
 }
 
+/* NAVBAR */
 #title {
   margin-Top: 20px;
   padding: 10px 10px 0px 10px;
-  font-size: 30px;
+  font-size: 35px;
   color: #fc3903;
-  /* background-color: gainsboro; */
   background-color: white;
   font-family: Monaco, serif;
   text-align: center;
@@ -40,10 +40,11 @@ code {
 
 #small-header {
   color: #3B95E3;
-  font-size: 15px;
+  font-size: 18px;
   font-style: italic;
 }
 
+/* HOMEPAGE */
 #about-me-container {
   margin: 20px 20px 0px 20px;
   width: 50%;
@@ -52,7 +53,6 @@ code {
 }
 
 #about-me {
-  /* color: gainsboro; */
   color: white;
   font-size: 15px;
   font-family: Monaco, serif;
@@ -61,7 +61,7 @@ code {
   margin-top: 20px;
 }
 
-/* ALBUM LINK HOVER EFFECTS */
+/* Listening to link effects */
 /* unvisited link */
 #listening-to:link {
   color: gainsboro;
@@ -82,7 +82,7 @@ code {
 
 /* selected link */
 #listening-to:active {
-  color: blue;
+  color: #3B95E3;
   text-decoration: underline;
 }
 
@@ -92,13 +92,13 @@ code {
 }
 
 #leah-pic {
-  margin: 20px;
-  width: 50%;
+  margin: 10px 20px 20px 20px;
+  width: 45%;
   border-radius: 10px;
 }
 
 /* RESUMES */
-#card-container {
+#resumes-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,11 +110,25 @@ code {
   justify-content: center;
 }
 
+#contact-heading {
+  color: white;
+  font-family: Monaco, serif;
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+  font-style: italic;
+}
+
 #contact-link-icons {
   text-align: center;
   color: white;
 }
 
+#contact-link-icons i {
+  margin-right: 25px;
+}
+
+/* contact icon link effects */
 /* unvisited link */
 #contact:link {
   color: white;
@@ -127,10 +141,14 @@ code {
 
 /* mouse over link */
 #contact:hover {
-  color: gainsboro;
+  color: #fc3903;
 }
 
 /* selected link */
 #contact:active {
   color: #fc3903;
+}
+
+.custom-icon {
+  transform: scale(2);
 }

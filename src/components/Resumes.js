@@ -5,7 +5,7 @@ import ResumeATS from "../Leah-Cardoz-Resume-ATS.pdf"
 const Resumes = () => {
   return (
     <>
-      <div id="card-container">
+      <div id="resumes-container">
         <div class="ui cards">
           <div class="ui card">
             <div class="image">
