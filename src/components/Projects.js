@@ -72,11 +72,7 @@ const Projects = () => {
     }
   ];
 
-
-
-
   return (
-    // <div>Projects coming soon!!!</div>
     <>
       <Card.Group id="project-cards-container">
         {myProjects.map(project => (
