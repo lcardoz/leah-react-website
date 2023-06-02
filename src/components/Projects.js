@@ -1,5 +1,6 @@
 import React from 'react';
 import GigPrints from '../images/Gig-Prints-HomePage.png';
+import { Card, Image } from 'semantic-ui-react';
 
 const Projects = () => {
 
@@ -20,7 +21,6 @@ const Projects = () => {
       tech: {
         1: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
         2: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg',
-        3: ''
       },
       info: 'Solo Capstone Project built in 3 weeks',
     },
@@ -61,9 +61,29 @@ const Projects = () => {
   ];
 
 
-  return (
-    <div>Projects coming soon!!!</div>
 
+
+  return (
+    // <div>Projects coming soon!!!</div>
+    <>
+      <Card.Group id="project-cards-container">
+        {myProjects.map(project => (
+          <Card key={project.id}>
+            <Image src={project.image} wrapped ui={false} />
+            <Card.Content className="content-container">
+              <Card.Header>{project.name}</Card.Header>
+              <Card.Description>
+                {project.description}
+              </Card.Description>
+            </Card.Content>
+            <Card.Content id="tech-icons-container">
+              <Image className="tech-icons" src={project.tech[1]} />
+              <Image className="tech-icons" src={project.tech[2]} />
+            </Card.Content>
+          </Card>
+        ))}
+      </Card.Group>
+    </>
   )
 }
 

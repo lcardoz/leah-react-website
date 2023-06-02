@@ -97,6 +97,22 @@ code {
   border-radius: 10px;
 }
 
+/* PROJECTS */
+#project-cards-container {
+  margin: 20px 20px 0px 20px;
+  border-radius: 10px;
+}
+
+#tech-icons-container {
+  text-align: center;
+}
+
+.tech-icons {
+  height: 50px;
+  width: 50px;
+}
+
+
 /* RESUMES */
 #resumes-container {
   display: flex;
