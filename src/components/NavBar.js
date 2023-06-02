@@ -12,7 +12,7 @@ const NavBar = () => {
         <Dropdown id="hamburger-icon" item icon='bars' style={{ fontSize: 24, paddingBottom: "25px"}} >
             <Dropdown.Menu direction="left">
               <Dropdown.Item id="dropdown-items" as={Link} to={'/'} icon='home' text='Home'/>
-              <Dropdown.Item id="dropdown-items" as={Link} to={'/projects'} icon='folder' text='Projects' />
+              <Dropdown.Item id="dropdown-items" as={Link} to={'/portfolio'} icon='folder' text='Portfolio' />
               <Dropdown.Item id="dropdown-items" as={Link} to={'/resumes'} icon='file alternate' text='Resumes' />
               <Dropdown.Item id="dropdown-items" as={Link} to={'/contact'} icon='envelope' text='Contact' />
             </Dropdown.Menu>

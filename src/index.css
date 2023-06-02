@@ -97,23 +97,56 @@ code {
   border-radius: 10px;
 }
 
-/* PROJECTS */
+/* PORTFOLIO */
+
 #project-cards-container {
-  margin: 20px 20px 0px 20px;
+  margin: 0px 20px 0px 20px;
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1em;
+  max-width: 100%;
+}
+
+#project-cards {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content-container {
+  flex: 1;
+  padding: 1em;
+}
+
+#project-links-container {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+
+.project-links {
+  color: #3B95E3;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 0px 20px 0px;
+  /* margin: 0px 0px 20px 0px; */
 }
 
-#tech-icons-container {
-  text-align: center;
+#tech-stack-container {
+  display: flex;
 }
 
 .tech-icons {
   height: 50px;
   width: 50px;
+  margin-right: 10px;
 }
+
 
 /* RESUMES */
 #resumes-container {

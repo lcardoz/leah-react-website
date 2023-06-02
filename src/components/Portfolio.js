@@ -4,7 +4,7 @@ import EngineEar from '../images/Engine-Ear-HomePage.png';
 import TheArchive from '../images/The-Archive-HomePage.png';
 import { Card, Image, Modal, Button } from 'semantic-ui-react';
 
-const Projects = () => {
+const Portfolio = () => {
 
   const myProjects = [
     {
@@ -41,7 +41,7 @@ const Projects = () => {
       image: TheArchive,
       github: ['https://github.com/ajdavid128/phase-3-group-project-front-end-react', 'https://github.com/ajdavid128/phase-3-sinatra-react-project'],
       vimeo: 'https://vimeo.com/799986630',
-      description: 'An app where users can showcase & submit their favorite screenprint artists and prints',
+      description: 'An app where users can showcase and submit their favorite screenprint artists and prints',
       features: ['Built frontend with React and backend with Ruby Sinatra to demonstrate full CRUD.', 'Engineered RESTful Routing by leveraging ActiveRecord associations for methods.', 'Elevated frontend styling with CSS including hover-over effects and timed slideshow.'],
       tech:  {
         frontend: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
@@ -65,39 +65,83 @@ const Projects = () => {
     setOpenModal(newOpenModal);
   };
 
+  const [hoveredButton, setHoveredButton] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredButton(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredButton(null);
+  };
+
   return (
     <>
       <Card.Group id="project-cards-container">
         {myProjects.map((project, index) => (
-          <Card key={project.id}>
-            <Image src={project.image} wrapped ui={false} />
+          <Card key={project.id} id="project-cards">
+            <Image src={project.image} wrapped ui={false} id="project-image" />
             <Card.Content className="content-container">
-              <Card.Header>{project.name}</Card.Header>
+              <Card.Header>{project.name.toUpperCase()}</Card.Header>
               <Card.Description>
                 {project.description}
               </Card.Description>
             </Card.Content>
-            <Card.Content id="tech-icons-container">
-              <Image className="tech-icons" src={project.tech.frontend} />
-              <Image className="tech-icons" src={project.tech.backend} />
-              <Modal
+            <Card.Content id="project-links-container">
+              {project.github[1] ? 
+                <>
+                  <a className="project-links" href={project.github[0]} target="_blank" rel="noopener noreferrer" alt="github-frontend">
+                    <i class="big github icon"></i> Github - Frontend
+                  </a>
+                  <a className="project-links" href={project.github[1]} target="_blank" rel="noopener noreferrer" alt="github-backend">
+                    <i class="big github square icon"></i> Github - Backend
+                  </a>
+                </> : 
+                <>
+                  <a className="project-links" href={project.github[0]} target="_blank" rel="noopener noreferrer" alt="github">
+                    <i class="big github icon"></i> Github
+                  </a>
+                </>}
+              <a className="project-links" href={project.vimeo} target="_blank" rel="noopener noreferrer" alt="vimeo-demo">
+                <i class="big vimeo icon"></i> Live Demo
+              </a>
+              <Modal id="modal"
                 onClose={() => handleCloseModal(index)}
                 onOpen={() => handleOpenModal(index)}
                 open={openModal[index]}
-                trigger={<Button>More Info</Button>}
+                trigger={
+                  <Button 
+                    key={index}
+                    style={{
+                      backgroundColor: hoveredButton === index ? '#1f70c0' : '#3B95E3',
+                      color: 'white',
+                    }}
+                    onMouseEnter={()=>handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    More Info
+                  </Button>
+                }
               >
-              <Modal.Header>{project.name}</Modal.Header>
+              <Modal.Header>{project.name.toUpperCase()}<h4>{project.info}</h4></Modal.Header>
               <Modal.Content image>
                 <Image wrapped size="medium" src={project.image} />
                 <Modal.Description>
-                  <h4>{project.description}</h4>
+                <h5>{project.description}</h5>
                   {project.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </Modal.Description>
               </Modal.Content>
+              <Modal.Content>
+                <h5>Tech Stack:</h5>
+                <div id="tech-stack-container">
+                  <Image className="tech-icons" src={project.tech.frontend} />
+                  <Image className="tech-icons" src={project.tech.backend} />
+                </div>
+              </Modal.Content>
               <Modal.Actions>
-                <Button onClick={() => handleCloseModal(index)}>Close</Button>
+                <Button class="project-buttons" onClick={() => handleCloseModal(index)}>Close</Button>
               </Modal.Actions>
             </Modal>
             </Card.Content>
@@ -108,4 +152,4 @@ const Projects = () => {
   )
 }
 
-export default Projects;
+export default Portfolio;
