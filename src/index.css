@@ -101,6 +101,9 @@ code {
 #project-cards-container {
   margin: 20px 20px 0px 20px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #tech-icons-container {

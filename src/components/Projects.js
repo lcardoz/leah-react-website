@@ -10,7 +10,9 @@ const Projects = () => {
       id: 1,
       name: 'Gig Prints',
       image: GigPrints,
-      github: 'https://github.com/lcardoz/gig-prints',
+      github: {
+        1: 'https://github.com/lcardoz/gig-prints',
+      },
       vimeo: 'https://vimeo.com/798881890',
       description: 'A hub for bands and poster designers to connect and create concert posters together',
       features: {
@@ -29,7 +31,9 @@ const Projects = () => {
       id: 2,
       name: 'Engine-Ear.',
       image: EngineEar,
-      github: 'https://github.com/hhw67865/Engine-ear',
+      github: {
+        1: 'https://github.com/hhw67865/Engine-ear', 
+      },
       vimeo: 'https://vimeo.com/799307351',
       description: 'A social media app solely for software engineers to interact, network, and post content',
       features: {
@@ -40,25 +44,31 @@ const Projects = () => {
       },
       tech: {
         1: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
-        2: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg',
+        2: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-plain-wordmark.svg',
       },
       info: 'Group Project built in 1 week by Leah Cardoz, Justin Woodruff & Henry Wu',
     },
-    // {
-    //   id: 3,
-    //   name: 'THE ARCHIVE',
-    //   image: '',
-    //   github: '',
-    //   vimeo: '',
-    //   description: '',
-    //   features: {
-    //     1: '',
-    //     2: '',
-    //     3: '',
-    //   },
-    //   tech: '',
-    //   authors: 'Group project built in 1 week by Leah Cardoz & Aaron David',
-    // }
+    {
+      id: 3,
+      name: 'The Archive',
+      image: '',
+      github: {
+       1: 'https://github.com/ajdavid128/phase-3-group-project-front-end-react',
+       2: 'https://github.com/ajdavid128/phase-3-sinatra-react-project',
+      },
+      vimeo: 'https://vimeo.com/799986630',
+      description: 'An app where users can showcase & submit their favorite screenprint artists and prints',
+      features: {
+        1: 'Built frontend with React and backend with Ruby Sinatra to demonstrate full CRUD.',
+        2: 'Engineered RESTful Routing by leveraging ActiveRecord associations for methods.',
+        3: 'Elevated frontend styling with CSS including hover-over effects and timed slideshow.',
+      },
+      tech:  {
+        1: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
+        2: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg',
+      },
+      authors: 'Group project built in 1 week by Leah Cardoz & Aaron David',
+    }
   ];
 
 
