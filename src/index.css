@@ -137,14 +137,23 @@ code {
   /* margin: 0px 0px 20px 0px; */
 }
 
+#modal-header {
+  /* display: flex; */
+  /* float: left; */
+  /* margin-right: 200px; */
+}
+
 #tech-stack-container {
   display: flex;
+  /* float: right; */
+  align-items: right;
+  justify-content: space-around;
 }
 
 .tech-icons {
   height: 50px;
   width: 50px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
