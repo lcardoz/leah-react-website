@@ -1,5 +1,6 @@
 import React from 'react';
 import GigPrints from '../images/Gig-Prints-HomePage.png';
+import EngineEar from '../images/Engine-Ear-HomePage.png';
 import { Card, Image } from 'semantic-ui-react';
 
 const Projects = () => {
@@ -24,28 +25,28 @@ const Projects = () => {
       },
       info: 'Solo Capstone Project built in 3 weeks',
     },
-    // {
-    //   id: 2,
-    //   name: 'Engine-Ear.',
-    //   image: '',
-    //   github: '',
-    //   vimeo: '',
-    //   description: '',
-    //   features: {
-    //     1: '',
-    //     2: '',
-    //     3: '',
-    //     4: '',
-    //   },
-    //   tech: {
-    //     1: '',
-    //     2: '',
-    //   },
-    //   info: 'Group Project built in 1 week by Leah Cardoz, Justin Woodruff & Henry Wu',
-    // },
+    {
+      id: 2,
+      name: 'Engine-Ear.',
+      image: EngineEar,
+      github: 'https://github.com/hhw67865/Engine-ear',
+      vimeo: 'https://vimeo.com/799307351',
+      description: 'A social media app solely for software engineers to interact, network, and post content',
+      features: {
+        1: 'Integrated a user-friendly React interface with a Ruby Rails authenticated backend.',
+        2: 'Utilized six models via ActiveRecord including a self join table with user alias ids.',
+        3: 'Strengthened signup and login security with hashing, salting, and bcrypt.',
+        4: 'Created a feature to filter content by tags such as job postings, projects, and blogs.',
+      },
+      tech: {
+        1: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
+        2: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-plain-wordmark.svg',
+      },
+      info: 'Group Project built in 1 week by Leah Cardoz, Justin Woodruff & Henry Wu',
+    },
     // {
     //   id: 3,
-    //   name: 'Engine-Ear.',
+    //   name: 'THE ARCHIVE',
     //   image: '',
     //   github: '',
     //   vimeo: '',
