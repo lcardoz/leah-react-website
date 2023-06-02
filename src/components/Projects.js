@@ -1,6 +1,7 @@
 import React from 'react';
 import GigPrints from '../images/Gig-Prints-HomePage.png';
 import EngineEar from '../images/Engine-Ear-HomePage.png';
+import TheArchive from '../images/The-Archive-HomePage.png';
 import { Card, Image } from 'semantic-ui-react';
 
 const Projects = () => {
@@ -51,7 +52,7 @@ const Projects = () => {
     {
       id: 3,
       name: 'The Archive',
-      image: '',
+      image: TheArchive,
       github: {
        1: 'https://github.com/ajdavid128/phase-3-group-project-front-end-react',
        2: 'https://github.com/ajdavid128/phase-3-sinatra-react-project',
