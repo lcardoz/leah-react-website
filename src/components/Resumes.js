@@ -9,9 +9,9 @@ const Resumes = () => {
         <div class="ui cards">
           <div class="ui card">
             <div class="image">
-              <iframe src={ResumeStyled} width="100%" height="450px" title="Resume-Styled"></iframe>
+              <iframe src={ResumeStyled} width="100%" height="430px" title="Resume-Styled"></iframe>
             </div>
-            <div class="content" style={{textAlign: 'center'}}>
+            <div class="content" style={{textAlign: 'center', fontWeight: "700"}}>
               <a style={{color: '#3B95E3'}} href={ResumeStyled} target="_blank" rel="noopener noreferrer">
                 <i class="eye icon"></i>
                 Human-Friendly Resume
@@ -20,9 +20,9 @@ const Resumes = () => {
           </div>
           <div class="ui card">
             <div class="image">
-              <iframe src={ResumeATS} width="100%" height="450px" title="Resume-Styled"></iframe>
+              <iframe src={ResumeATS} width="100%" height="430px" title="Resume-Styled"></iframe>
             </div>
-            <div class="content" style={{textAlign: 'center'}}>
+            <div class="content" style={{textAlign: 'center', fontWeight: "700"}}>
               <a style={{color: '#3B95E3'}} href={ResumeATS} target="_blank" rel="noopener noreferrer">
                 <i class="desktop icon"></i>
                 ATS-Friendly Resume

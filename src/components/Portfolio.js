@@ -5,6 +5,7 @@ import TheArchive from '../images/The-Archive-HomePage.png';
 import {Card, Image, Modal, Button, Header} from 'semantic-ui-react';
 
 const Portfolio = () => {
+	
 	const myProjects = [
 		{
 			id: 1,
@@ -99,7 +100,7 @@ const Portfolio = () => {
 						<Image src={project.image} wrapped ui={false} id='project-image' />
 						<Card.Content className='content-container'>
 							<Card.Header>{project.name.toUpperCase()}</Card.Header>
-							<Card.Description>{project.description}</Card.Description>
+							<Card.Description style={{fontWeight: "500"}}>{project.description}</Card.Description>
 						</Card.Content>
 						<Card.Content id='project-links-container'>
 							{project.github[1] ? (
@@ -154,8 +155,7 @@ const Portfolio = () => {
 											<div style={{display: 'flex', justifyContent: 'space-between'}}>
 												<div id='modal-header'>
 													{project.name.toUpperCase()}
-
-													<h5>{project.info}</h5>
+													<h5 style={{color: "#525252"}}>{project.info}</h5>
 												</div>
 												<div id='tech-stack-container'>
 													<Image className='tech-icons' src={project.tech.frontend} />

@@ -9,7 +9,7 @@ const NavBar = () => {
       <h1 id="title">
         <strong>LEAH CARDOZ</strong>
         <span id="small-header">  they/them</span>
-        <Dropdown id="hamburger-icon" item icon='bars' style={{ fontSize: 24, paddingBottom: "25px"}} >
+        <Dropdown id="hamburger-icon" item icon='bars' style={{ fontSize: 24, paddingBottom: "23px"}} >
             <Dropdown.Menu direction="left">
               <Dropdown.Item id="dropdown-items" as={Link} to={'/'} icon='home' text='Home'/>
               <Dropdown.Item id="dropdown-items" as={Link} to={'/portfolio'} icon='folder' text='Portfolio' />
