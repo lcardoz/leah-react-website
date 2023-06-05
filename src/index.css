@@ -182,6 +182,12 @@ code {
 #contact-link-icons {
   text-align: center;
   color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* padding: 15px; */
+  height: 35px;
+  /* justify-items: center; */
 }
 
 #contact-link-icons i {

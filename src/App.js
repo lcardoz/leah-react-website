@@ -16,7 +16,7 @@ function App() {
         <Route path = '/resumes' element={ <Resumes />} />
         <Route path = '/contact' element={ <Contact />} />
         <Route path = '*' element={ <NoPage />} />
-        <Route path = '/' element={ <Home />} />
+        <Route path = '/' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}> <Home /> </div>} />
       </Routes>
       <ContactLinks/>
     </>

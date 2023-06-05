@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please note this is a work in progress!
 
 <!-- TO DO:
+-contact links at footer of page
 - test contrast / find a better color palette for website
 - make title name navigate to homepage
 - change favicon

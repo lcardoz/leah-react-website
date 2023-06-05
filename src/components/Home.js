@@ -3,7 +3,7 @@ import leahPic from '../images/leahpic1.JPG';
 
 const Home = () => {
   return (
-    <>
+    <div>
       <div id="about-me-container">
         <div id ="about-me">
           <p style={{fontSize: "18px"}}>software engineer + concert enthusiast + student always</p>
@@ -16,7 +16,7 @@ const Home = () => {
       <div id="leah-pic-container">
         <img id="leah-pic" src={leahPic} alt="Leah in Antigua" />
       </div>
-    </>
+    </div>
   )
 }
 
