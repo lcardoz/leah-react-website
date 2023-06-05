@@ -114,7 +114,7 @@ code {
 }
 
 #project-cards {
-  width: 300px;
+  /* width: 300px; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -163,9 +163,20 @@ code {
 
 
 /* CONTACT */
+
+/* #contact-page {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+
 #leah-pic-container-contact {
   display: flex;
   justify-content: center;
+  
 }
 
 #contact-heading {
@@ -191,7 +202,8 @@ code {
 }
 
 #contact-link-icons i {
-  margin-right: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 /* contact icon link effects */

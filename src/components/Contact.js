@@ -3,15 +3,14 @@ import leahPic4 from '../images/leahpic4.JPG';
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact-page">
       <div id="leah-pic-container-contact">
         <img id="leah-pic" src={leahPic4} alt="Leah in Antigua" />
       </div>
+      <br />
       <div id="contact-heading">
         Let's get coffee and talk shop!  
       </div>
-      <br />
-      <br />
     </div>
   )
 }

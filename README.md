@@ -5,7 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please note this is a work in progress!
 
 <!-- TO DO:
--contact links at footer of page
+- contact links at footer of page - get scrollbar to disappear
+- try grid on portfolio page so that card size is responsive
 - test contrast / find a better color palette for website
 - make title name navigate to homepage
 - change favicon
