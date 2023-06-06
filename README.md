@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please note this is a work in progress!
 
 <!-- TO DO:
+- fix hover on resumes pdf view link - map over array
 - make entire app responsive/centered
 - contact links at footer of page - get scrollbar to disappear
 - try grid on portfolio page so that card size is responsive
