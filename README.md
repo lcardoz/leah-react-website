@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please note this is a work in progress!
 
 <!-- TO DO:
+- make entire app responsive/centered
 - contact links at footer of page - get scrollbar to disappear
 - try grid on portfolio page so that card size is responsive
 - test contrast / find a better color palette for website
@@ -12,7 +13,6 @@ Please note this is a work in progress!
 - change favicon
 - add shadows/borders to create depth/dimension?
 - make sure fonts (style, weight, size, color etc), colors, hover effects, link effects, spacing (margin, padding, width/height) are all uniform
-- buy domain and deploy site
 - update resumes/huntr etc with new website link
 - reupload new resumes to Resumes component
 -->
