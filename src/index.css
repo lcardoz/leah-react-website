@@ -96,7 +96,7 @@ code {
 
 #leah-pic {
   margin: 15px 15px 15px 15px;
-  width: 45%;
+  width: 48%;
   border-radius: 10px;
 }
 
@@ -159,23 +159,8 @@ code {
   align-items: center;
   margin-bottom: 15px;
   margin-top: 15px;
+  padding-bottom: 10px;
 }
-
-/* #pdf-viewer:link {
-  color: white;
-}
-
-#pdf-viewer:visited {
-  color: white;
-}
-
-#pdf-viewer:hover {
-  color: gainsboro;
-}
-
-#pdf-viewer:active {
-  color: #fc3903;
-} */
 
 
 /* CONTACT */
@@ -192,7 +177,6 @@ code {
 #leah-pic-container-contact {
   display: flex;
   justify-content: center;
-  
 }
 
 #contact-heading {
@@ -210,9 +194,9 @@ code {
   text-align: center;
   color: white;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
-  /* padding: 15px; */
+  padding-top: 10px;
   height: 35px;
   /* justify-items: center; */
 }
