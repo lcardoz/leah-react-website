@@ -7,7 +7,7 @@ Please note this is a work in progress!
 <!-- TO DO:
 - fix hover on resumes pdf view link - map over array
 - make entire app responsive/centered
-- contact links at footer of page - get scrollbar to disappear
+- contact links at footer of page - get scrollbar to disappear  - STOPPED WORKING
 - try grid on portfolio page so that card size is responsive
 - test contrast / find a better color palette for website
 - make title name navigate to homepage on click
