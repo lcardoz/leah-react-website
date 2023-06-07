@@ -146,7 +146,7 @@ const Portfolio = () => {
 										}}
 										onMouseEnter={() => handleMouseEnter(index)}
 										onMouseLeave={handleMouseLeave}>
-										Project Info
+										Project Info 
 									</Button>
 								}>
 								<Modal.Header>

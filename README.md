@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please note this is a work in progress!
 
 <!-- TO DO:
-- fix hover on resumes pdf view link - map over array
+- try pdf viewer without print/download icons at top
 - make entire app responsive/centered
+- make footer white with color icons?
 - contact links at footer of page - get scrollbar to disappear
 - try grid on portfolio page so that card size is responsive
 - test contrast / find a better color palette for website

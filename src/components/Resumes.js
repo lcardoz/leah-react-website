@@ -1,54 +1,58 @@
 import React, {useState} from 'react';
-import ResumeStyled from "../resumes/Leah_Cardoz_Resume_Styled.pdf"
-import ResumeATS from "../resumes/Leah_Cardoz_Resume_ATS.pdf"
+import ResumeStyled from "../resumes/Leah_Cardoz_Resume_Styled.pdf";
+import ResumeATS from "../resumes/Leah_Cardoz_Resume_ATS.pdf";
+import {Button} from 'semantic-ui-react';
 
 const Resumes = () => {
 
-  //create array of 2 cards and map through, so that hover effect is per card
+  const myResumes = [
+    {
+      name: "Human-Friendly Resume",
+      pdf: ResumeStyled,
+      icon: "eye icon"
+    },
+    {
+      name: "ATS-Friendly Resume",
+      pdf: ResumeATS,
+      icon: "desktop icon"
+    }
+  ]
 
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(null);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  const handleMouseEnter = (index) => {
+    setIsHovered(index);
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    setIsHovered(null);
   };
-
-  const hoveredDiv = {
-  backgroundColor: isHovered ? '#f2f2f2' : 'white',
-  textAlign: 'center', 
-  fontWeight: isHovered ? "800" : "700",
-};
 
   return (
     <>
       <div id="resumes-container">
-        <div class="ui cards">
-          <div class="ui card">
+        {myResumes.map((resume, index) => (
+          <div class="ui card" key={index} style={{margin: 0, marginRight: "10px", marginLeft: "10px"}}>
             <div class="image">
-              <iframe src={ResumeStyled} width="100%" height="430px" title="Resume-Styled"></iframe>
+              <iframe src={resume.pdf} width="100%" height="430px" title={resume.name}></iframe>
             </div>
-            <div class="content" style={hoveredDiv} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <a style={{color: '#3B95E3'}} href={ResumeStyled} target="_blank" rel="noopener noreferrer">
-                <i class="eye icon"></i>
-                Human-Friendly Resume
-              </a>
+            <div class="content" style={{textAlign: 'center'}} >
+              <Button
+                key={index}
+                style={{
+                  color: 'white',
+                  backgroundColor: isHovered === index ? '#1f70c0' : '#3B95E3',
+                  fontWeight: isHovered === index ? "800" : "700",
+                }} 
+                onMouseEnter={() => handleMouseEnter(index)} 
+                onMouseLeave={handleMouseLeave}
+                href={resume.pdf} target="_blank" rel="noopener noreferrer"
+              >
+                <i style={{color: 'white', opacity: '1'}} class={resume.icon}></i>{resume.name}
+              </Button>
             </div>
           </div>
-          <div class="ui card">
-            <div class="image">
-              <iframe src={ResumeATS} width="100%" height="430px" title="Resume-Styled"></iframe>
-            </div>
-            <div class="content" style={hoveredDiv} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <a style={{color: '#3B95E3'}} href={ResumeATS} target="_blank" rel="noopener noreferrer">
-                <i class="desktop icon"></i>
-                ATS-Friendly Resume
-              </a>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </>
   )
