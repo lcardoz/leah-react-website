@@ -5,13 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please note this is a work in progress!
 
 <!-- TO DO:
-- try pdf viewer without print/download icons at top
-- make entire app responsive/centered
+- make entire app responsive/centered - try grid on portfolio page so that card size is responsive?
 - make footer white with color icons?
-- contact links at footer of page - get scrollbar to disappear
-- try grid on portfolio page so that card size is responsive
 - test contrast / find a better color palette for website
-- make title name navigate to homepage on click
-- add shadows/borders to create depth/dimension?
+- add shadows/borders/gradients to create depth/dimension?
 - make sure fonts (style, weight, size, color etc), colors, hover effects, link effects, spacing (margin, padding, width/height) are all uniform
 -->

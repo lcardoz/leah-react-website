@@ -230,3 +230,7 @@ code {
 .custom-icon {
   transform: scale(2);
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
