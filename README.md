@@ -1,8 +1,8 @@
-# Leah's New & Improved Personal Website
+# Leah Cardoz's Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my new and improved personal website built with ReactJS. 
 
-Please note this is a work in progress!
+Please note this is still a work in progress!
 
 <!-- TO DO:
 - make entire app responsive/centered - try grid on portfolio page so that card size is responsive?
