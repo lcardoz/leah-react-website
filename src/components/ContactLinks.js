@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ContactLinks = () => {
-
   return (
     <div id="contact-link-icons">
       <a id="contact" href="mailto:leahcardoz@gmail.com" target="_blank" rel="noopener noreferrer" alt="email">

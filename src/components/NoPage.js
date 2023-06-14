@@ -2,12 +2,13 @@ import React from 'react';
 
 const NoPage = () => {
   return (
-    <div style={{display: 'flex', justifyContent: 'center', borderRadius: "30px"}}>
-      <div style={{color: 'white', backgroundColor: '#fc3903', fontWeight: '700', textAlign: 'center', margin: '15px', width: '50%', padding: '25px 50px 50px 50px', borderRadius: "30px", fontSize: '20px',}}>
-        <h2>Oops! This page does not exist.</h2>
+    <div id="no-page-container">
+      <div id="no-page-box">
+        <p style={{fontSize: '20px'}}>Oops!</p>
+        <p style={{fontSize: '15px', marginBottom: '0px'}}>This page does not exist.</p>
         <br />
-        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-          <img src="https://media.giphy.com/media/xT0BKFZgaGq6af8hZ6/giphy.gif" alt="David Byrne dancing" style={{maxWidth: '100%', maxHeight: '100%', width: 'auto', height: 'auto'}} />
+        <div id="no-page-gif-container">
+          <img id="no-page-gif" src="https://media.giphy.com/media/xT0BKFZgaGq6af8hZ6/giphy.gif" alt="David Byrne dancing" />
         </div>
       </div>
     </div>

@@ -32,6 +32,7 @@ code {
   top: 25px;
   right: 15px;
   cursor: pointer;
+
 }
 
 #dropdown-items {
@@ -225,4 +226,37 @@ code {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+/* NO PAGE */
+#no-page-container {
+  display: flex; 
+  justify-content: center; 
+  border-radius: 30px;
+}
+
+#no-page-box {
+  color: white; 
+  background-color: #fc3903; 
+  font-weight: 700;
+  text-align: center; 
+  margin: 15px;
+  width: 50%;
+  padding: 25px 50px 30px 50px; 
+  border-radius: 30px; 
+  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
+  font-family: Monaco, serif;
+}
+
+#no-page-gif-container {
+  display: flex; 
+  justify-content: center;
+}
+
+#no-page-gif {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; 
+  height: auto; 
+  border-radius: 30px;
 }
