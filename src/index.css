@@ -53,6 +53,7 @@ code {
   width: 50%;
   background-color: #fc3903;
   border-radius: 10px;
+  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
 }
 
 #about-me {
@@ -98,6 +99,7 @@ code {
   margin: 15px 15px 15px 15px;
   width: 48%;
   border-radius: 10px;
+  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
 }
 
 
