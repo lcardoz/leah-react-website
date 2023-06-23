@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #3B95E3;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 code {
@@ -49,12 +52,23 @@ code {
 
 
 /* HOMEPAGE */
+.parent-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
 #about-me-container {
-  margin: 15px 15px 0px 15px;
-  width: 50%;
-  background-color: #fc3903;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /* align-items: center;
+  justify-content: flex-start; */
+  /* flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; */
 }
 
 #about-me {
@@ -62,8 +76,44 @@ code {
   font-size: 15px;
   font-family: Monaco, serif;
   font-weight: 900;
-  padding: 20px;
-  margin-top: 15px;
+  padding: 15px;
+  /* margin-top: 15px; */
+  margin: 15px 15px 0px 15px;
+  /* width: 50%; */
+  background-color: #fc3903;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
+  flex: 1;
+  /* flex-grow: 1; */
+  /* max-width: 100%; */
+  /* max-height: 50%; */
+  /* overflow: auto;  */
+  /* flex-basis: 50%; */
+  text-align: left;
+  max-width: 50%;
+}
+
+#leah-pic {
+  margin: 15px 15px 15px 15px;
+  /* width: 50%; */
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
+  align-self: flex-end;
+  /* flex-grow: 1; */
+  /* max-width: 100%; 
+  max-height: 100%; */
+  flex: 1;
+  /* object-fit: contain; */
+  max-width: 50%;
+  height: auto;
+}
+
+#leah-pic-container {
+  display: flex;
+  justify-content: flex-end;
+  /* justify-content: flex-end;
+  width: 100vh;
+  align-self: flex-end; */
 }
 
 /* Listening to link effects */
@@ -90,19 +140,6 @@ code {
   color: #3B95E3;
   text-decoration: underline;
 }
-
-#leah-pic-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#leah-pic {
-  margin: 15px 15px 15px 15px;
-  width: 48%;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px 0 white, 0 0 0 1px white;
-}
-
 
 /* PORTFOLIO */
 #project-cards-container {
