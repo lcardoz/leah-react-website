@@ -111,7 +111,7 @@ const Portfolio = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										alt='github-frontend'>
-										<i class='big github icon'></i> Github - Frontend
+										<i class='big github icon'></i> GitHub - Frontend
 									</a>
 									<a
 										className='project-links'
@@ -119,13 +119,13 @@ const Portfolio = () => {
 										target='_blank'
 										rel='noopener noreferrer'
 										alt='github-backend'>
-										<i class='big github square icon'></i> Github - Backend
+										<i class='big github square icon'></i> GitHub - Backend
 									</a>
 								</>
 							) : (
 								<>
 									<a className='project-links' href={project.github[0]} target='_blank' rel='noopener noreferrer' alt='github'>
-										<i class='big github icon'></i> Github
+										<i class='big github icon'></i> GitHub
 									</a>
 								</>
 							)}
