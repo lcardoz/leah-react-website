@@ -12,8 +12,8 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path = '/portfolio' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}><Portfolio /></div>} />
         <Route path = '/resumes' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}><Resumes /></div>} />
+        <Route path = '/portfolio' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}><Portfolio /></div>} />
         <Route path = '/contact' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}><Contact /></div>} />
         <Route path = '*' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}><NoPage /></div>} />
         <Route path = '/' element={ <div style={{height: "calc(100vh - 111px)", overflowY: "scroll", overflowX: "hidden"}}> <Home /> </div>} />

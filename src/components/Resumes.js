@@ -1,20 +1,21 @@
 import React, {useState} from 'react';
-import ResumeStyled from "../resumes/Leah_Cardoz_Resume_Styled.pdf";
-import ResumeATS from "../resumes/Leah_Cardoz_Resume_ATS.pdf";
+import ResumeSE from "../resumes/Leah_Cardoz_Resume_Styled.pdf";
+// import ResumeATS from "../resumes/Leah_Cardoz_Resume_ATS.pdf";
+import ResumeEA from "../resumes/Leah_Cardoz_EA_Resume.pdf"
 import {Button} from 'semantic-ui-react';
 
 const Resumes = () => {
 
   const myResumes = [
     {
-      name: "Human-Friendly Resume",
-      pdf: ResumeStyled,
-      icon: "eye icon"
+      name: "EA Resume",
+      pdf: ResumeEA,
+      icon: "desktop icon"
     },
     {
-      name: "ATS-Friendly Resume",
-      pdf: ResumeATS,
-      icon: "desktop icon"
+      name: "SE Resume",
+      pdf: ResumeSE,
+      icon: "eye icon"
     }
   ]
 
