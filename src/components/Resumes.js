@@ -10,12 +10,12 @@ const Resumes = () => {
     {
       name: "EA Resume",
       pdf: ResumeEA,
-      icon: "desktop icon"
+      icon: "pencil alternate icon",
     },
     {
       name: "SE Resume",
       pdf: ResumeSE,
-      icon: "eye icon"
+      icon: "code icon"
     }
   ]
 
